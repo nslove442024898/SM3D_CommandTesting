@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87AA3861-A194-4731-9274-EB2B35296F88}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyNameSpace</RootNamespace>
+    <AssemblyName>MySM3DCmd</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonClient">
+      <HintPath>C:\Program Files (x86)\Smart3D\Core\Container\Bin\Assemblies\Release\CommonClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommonMiddle">
+      <HintPath>C:\Program Files (x86)\Smart3D\Core\Container\Bin\Assemblies\Release\CommonMiddle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ManufacturingMiddle">
+      <HintPath>C:\Program Files (x86)\Smart3D\Core\Container\Bin\Assemblies\Release\ManufacturingMiddle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PlanningClient">
+      <HintPath>C:\Program Files (x86)\Smart3D\Core\Container\Bin\Assemblies\Release\PlanningClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PlanningMiddle">
+      <HintPath>C:\Program Files (x86)\Smart3D\Core\Container\Bin\Assemblies\Release\PlanningMiddle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SmartMarineStructureMiddle">
+      <HintPath>C:\Program Files (x86)\Smart3D\Core\Container\Bin\Assemblies\Release\SmartMarineStructureMiddle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SmartPlantStructureMiddle">
+      <HintPath>C:\Program Files (x86)\Smart3D\Core\Container\Bin\Assemblies\Release\SmartPlantStructureMiddle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormForPartsQtyImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForPartsQtyImport.Designer.cs">
+      <DependentUpon>FormForPartsQtyImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPanelProfileLengthCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPanelProfileLengthCheck.Designer.cs">
+      <DependentUpon>FrmPanelProfileLengthCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartXml.Designer.cs">
+      <DependentUpon>frmPartXml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportBlockPanelPartsQty2SPM.cs" />
+    <Compile Include="MyCheckCurveMFGSettings.cs" />
+    <Compile Include="MyProfileLengthCheck.cs" />
+    <Compile Include="MyPanelManufacutringCheck.cs" />
+    <Compile Include="PanelMaterialList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelMaterialList.Designer.cs">
+      <DependentUpon>PanelMaterialList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_Manufacturing_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_Manufacturing_Check.Designer.cs">
+      <DependentUpon>Panel_Manufacturing_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SavePartsXml.cs" />
+    <Compile Include="CommonTools.cs" />
+    <Compile Include="SetAssemblyBoardSide.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PGCheck.cs" />
+    <Compile Include="ShowObjectAllPro.cs" />
+    <Compile Include="ShowPanelPartMaterail.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="tb_MTO.cs" />
+    <Compile Include="tb_Schedule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormForPartsQtyImport.resx">
+      <DependentUpon>FormForPartsQtyImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPanelProfileLengthCheck.resx">
+      <DependentUpon>FrmPanelProfileLengthCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartXml.resx">
+      <DependentUpon>frmPartXml.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelMaterialList.resx">
+      <DependentUpon>PanelMaterialList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_Manufacturing_Check.resx">
+      <DependentUpon>Panel_Manufacturing_Check.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
